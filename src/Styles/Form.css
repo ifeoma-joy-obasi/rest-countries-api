@@ -1,0 +1,122 @@
+.search svg{
+width: 20px;
+color: var(--input-icon);
+}
+
+.container-two {
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 1.5em;
+    gap: 2.5em;
+    
+}
+
+.search{
+    background-color: var(--elements);
+    width: 100%;
+    border-radius: 0.5rem;
+display: flex;
+align-items: center;
+padding: 1em 2.5em;
+gap: 2em;
+font-size: 1.4rem;
+
+}
+
+
+.search > input{
+    background: transparent;
+    border: none;
+color: var(--input-text);
+}
+
+.search > input::placeholder{
+color: var(--input-text);
+}
+
+.search>input:focus-visible,
+.search>input:focus-within{
+    outline: none;
+}
+
+.select{
+    width: 50%;
+    border-radius: 0.5rem;
+    padding: 1.2em;
+    background-color: var(--elements);
+    border: none;
+    color: var(--text-color);
+}
+
+.select:focus-within,
+.select:focus-visible{
+    outline: none;
+}
+
+
+
+/* for adding complexities to larger screen */
+
+@media (min-width: 35em) {
+    .container-two {
+        max-width: 1260px;
+        flex-direction: row;
+        padding-block: 2em;
+    }
+
+
+    .select {
+        width: 40%;
+
+    }
+
+    .search {
+        background-color: var(--elements);
+        width: 40%;
+
+    }
+
+.search {
+    
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 0em;
+    font-size: 1.2rem;
+    gap: 0.8em;
+}
+
+.search svg {
+    width: 17px;
+    color: var(--input-icon);
+}
+}
+
+@media (min-width: 60em){
+.container-two {
+        max-width: 1260px;
+            flex-direction: row;
+            padding-block: 2em ;
+    }
+
+
+.select {
+    width: 20%;
+}
+
+.search {
+    background-color: var(--elements);
+    width: 35%;
+    padding: 1em 2.5em;
+gap: 2em;
+}
+.search svg {
+    width: 20px;
+    color: var(--input-icon);
+}
+}
+
