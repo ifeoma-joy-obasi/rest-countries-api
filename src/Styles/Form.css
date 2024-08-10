@@ -5,14 +5,14 @@ color: var(--input-icon);
 
 .container-two {
     cursor: pointer;
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding-top: 1.5em;
     gap: 2.5em;
-    
+
 }
 
 .search{
@@ -23,8 +23,8 @@ display: flex;
 align-items: center;
 padding: 1em 2.5em;
 gap: 2em;
-font-size: 1.4rem;
-
+font-size: 1.5rem;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -44,12 +44,13 @@ color: var(--input-text);
 }
 
 .select{
-    width: 50%;
+    width: 60%;
     border-radius: 0.5rem;
     padding: 1.2em;
     background-color: var(--elements);
     border: none;
     color: var(--text-color);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 
 .select:focus-within,
@@ -63,9 +64,9 @@ color: var(--input-text);
 
 @media (min-width: 35em) {
     .container-two {
-        max-width: 1260px;
+        width: 90%;
         flex-direction: row;
-        padding-block: 2em;
+        padding: 2em 0px;
     }
 
 
@@ -81,7 +82,7 @@ color: var(--input-text);
     }
 
 .search {
-    
+
     display: flex;
     align-items: center;
     padding: 1em;
@@ -97,12 +98,6 @@ color: var(--input-text);
 }
 
 @media (min-width: 60em){
-.container-two {
-        max-width: 1260px;
-            flex-direction: row;
-            padding-block: 2em ;
-    }
-
 
 .select {
     width: 20%;
@@ -119,4 +114,3 @@ gap: 2em;
     color: var(--input-icon);
 }
 }
-

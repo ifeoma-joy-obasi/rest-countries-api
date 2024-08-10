@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Country from './Country';
+import '../Styles/countries.css'
 import Form from './Form';
 import {Link} from 'react-router-dom'
 
@@ -7,7 +8,7 @@ const Countries = () => {
     //state for storing data
     const [countriesData, setCountriesData] = useState([])
     const [searchTerm, setSearchTerm] = useState('');
-    
+
     //fetching data
     useEffect(()=>{
         let isCancelled = false;
@@ -38,14 +39,14 @@ const Countries = () => {
         }
     }).map((country, key)=>{
         let {name} = country
-        
+
         return <div key={key} className='complete'>
 
         <Link to={`/country/${name.common}`}>
         <Country {...country}/>
         </Link>
         </div>
-        
+
     })}
     </div>
     </div>

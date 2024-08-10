@@ -1,0 +1,31 @@
+
+/* grid styling */
+.grid-container {
+
+  margin: auto;
+  display: grid;
+  cursor: pointer;
+  gap: 2em;
+ grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+width: 95%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.complete{
+  border-radius: 2em;
+  min-height: 170px;
+  background-color: transparent;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+
+@media (min-width: 40em){
+
+.grid-container{
+width: 90%;
+margin: 0em auto 2em;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+}

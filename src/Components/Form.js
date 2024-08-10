@@ -4,22 +4,24 @@ import '../Styles/Form.css'
 
 
 const Form = ({ setSearchTerm}) => {
-    
+
     return (
     <div>
         {/* <Form searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
-        
+
     <div className="container-two">
-            
-            <div className="search">
+
+                <div className="search">
+                <div>
                 <SearchIcon/>
-            <input type="text" 
-            className='search-input' 
+                </div>
+            <input type="text"
+            className='search-input'
             placeholder='Search for a country...'
             onChange={(e)=>setSearchTerm(e.target.value)}
             />
             </div>
-            
+
             <select className='select'>
             <option value="" default hidden>Filter by Region</option>
             <option value="Africa" className='option'>Africa</option>

@@ -9,9 +9,6 @@ height: 160px;
 
 }
 
-.img-country{
-
-}
 
 .country-detail{
     background-color: var(--elements);
@@ -39,5 +36,3 @@ height: 160px;
     font-weight: 600;
 color: var(--text-color);
 }
-
-
