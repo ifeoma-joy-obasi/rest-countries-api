@@ -1,4 +1,3 @@
-import React, {useState} from 'react'
 import { SearchIcon } from './icons'
 import '../Styles/Form.css'
 
@@ -7,7 +6,6 @@ const Form = ({ setSearchTerm}) => {
 
     return (
     <div>
-        {/* <Form searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
 
     <div className="container-two">
 

@@ -32,7 +32,7 @@ const Countries = () => {
         <Form setSearchTerm={setSearchTerm}/>
     <div className='grid-container'>
     {countriesData.filter((country)=>{
-        if(searchTerm === ''){
+        if (searchTerm === '') {
             return country;
         }else if(country.name.common.toLowerCase().includes(searchTerm.toLowerCase())){
             return country;

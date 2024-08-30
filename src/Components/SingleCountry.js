@@ -21,7 +21,7 @@ const SingleCountry = () => {
         return ()=>{
             isCancelled = true;
         }
-    },[])
+    },[name])
 
 
 
