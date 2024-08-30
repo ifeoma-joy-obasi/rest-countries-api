@@ -31,11 +31,7 @@ const Countries = () => {
 
         <Form setSearchTerm={setSearchTerm}/>
     <div className='grid-container'>
-    {countriesData.filter((country)=>{
-         if(country.name.common.toLowerCase().includes(searchTerm.toLowerCase())){
-            return country;
-        }
-    }).map((country, key)=>{
+    {countriesData.map((country, key)=>{
         let {name} = country
 
         return <div key={key} className='complete'>
